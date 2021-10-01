@@ -5,9 +5,9 @@
 
 #parent class
 class Pet:
-    name = ''
-    species = ''
-    sound = ''
+    name = 'Max'
+    species = 'canary'
+    sound = 'chirp'
 
     def intro(self):
         msg = "\nHi. My name is {}, and I'm a {}. {}".format(self.name,self.species,self.sound)
@@ -15,19 +15,15 @@ class Pet:
 
 #child class
 class Cat(Pet):
-    name = 'Momo'
-    species = 'cat'
-    sound = 'Meow'
-    adjective = 'sneaky'
+    weight = '1'
+    adjective = 'plump'
     #polymorphism of parent class method
     def intro(self):
-        msg = "\nHi. My name is {}, and I'm a {} {}. {}".format(self.name,self.adjective,self.species,self.sound)
+        msg = "\nHi. My name is {}, and I'm a {} {}lb(s) {}. {}".format(self.name,self.adjective,self.weight,self.species,self.sound)
         return msg
 
 #another child class
 class Bird(Pet):
-    name = 'Max'
-    species = 'canary'
     color = 'yellow'
     flying = True
 
