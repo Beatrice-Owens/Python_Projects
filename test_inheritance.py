@@ -25,14 +25,15 @@ class Cat(Pet):
         self.color = color
 
 class Dog(Pet):
-    breed = ''
-    color = ''
-    def __init__(self, name, species, age, breed, color):
+    weight = 0
+    markings = ''
+    def __init__(self, name, species, age, weight, markings):
         super().__init__(name, species, age)
-        self.breed = breed
-        self.color = color
+        self.weight = weight
+        self.markings = markings
 
 animal1 = Cat('Momo', 'cat', 5, 'American Shorthair', 'orange')
-animal2 = Dog('Max', 'dog', 13, 'Australian Cattle Dog', 'blue heeler')
+animal2 = Dog('Max', 'dog', 13, 45, 'Blue Heeler')
 
 print(animal1.breed)
+print(animal2.markings)
