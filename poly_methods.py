@@ -28,15 +28,15 @@ class Cat(Pet):
 class Bird(Pet):
     name = 'Max'
     species = 'canary'
-    sound = 'chirp'
+    color = 'yellow'
     flying = True
 
     def intro(self):
         if self.flying:
-            msg = "\nHi. I'm a {} named {}, and I can fly! {}".format(self.species,self.name,self.sound)
+            msg = "\nHi. I'm a(n) {} {} named {}, and I can fly!".format(self.color,self.species,self.name)
             return msg
         else:
-            msg = "Hi. I'm a {} named {}, and I can't fly. {}".format(self.species,self.name,self.sound)
+            msg = "Hi. I'm a(n) {} {} named {}, and I can't fly.".format(self.color,self.species,self.name)
             return msg
             
 
