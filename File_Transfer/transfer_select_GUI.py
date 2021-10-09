@@ -50,7 +50,7 @@ class ParentWindow(Frame):
                 current_time = time.time()
                 time_since_mod = current_time - mod_time #determin if 24 hrs have passed by subtracting in epoch time
                 if time_since_mod <= 86400:
-                    shutil.copy2(source+"//"+i, destination)
+                    shutil.move(source+"//"+i, destination)
         
         #label to display the chosen source folder
         self.lbl_src = tk.Label(self.master,text='Select Source', width=50, height=2)
